@@ -35,7 +35,7 @@
           <i class="fas fa-sync-alt mr-3"></i> JavaScript Async
         </h2>
         <p>JavaScript normally runs one thing at a time in order (this is called being "single-threaded"). But sometimes, we need to do something that takes time (like downloading a file), and we don’t want to make the whole page freeze while it happens. Async lets JavaScript handle tasks in the background while still running the rest of your code smoothly.</p>
-        <p>Think of it like this: you're cooking dinner, and while you're waiting for the water to boil, you start cutting vegetables. You don't stand there just staring at the pot. Similarly, JavaScript can start working on something else while waiting for a task to finish in the background.</p>
+        <p class="mb-6">Think of it like this: you're cooking dinner, and while you're waiting for the water to boil, you start cutting vegetables. You don't stand there just staring at the pot. Similarly, JavaScript can start working on something else while waiting for a task to finish in the background.</p>
 <pre><code>// Example of Async function
 setTimeout(() => {
   console.log("This is asynchronous");
@@ -48,7 +48,7 @@ setTimeout(() => {
           <i class="fas fa-hand-point-right mr-3"></i> Callback
         </h2>
         <p>A callback is just a fancy word for "calling back." It’s a function you give to another function so that it can call it once it's done with its work. Think of a callback like giving your number to a friend and saying, "Call me when you arrive at the party." You don't know exactly when they will call, but you know they will call once they get there.</p>
-        <p>In JavaScript, we pass callbacks to handle things that take time, like loading files or making network requests.</p>
+        <p class="mb-6">In JavaScript, we pass callbacks to handle things that take time, like loading files or making network requests.</p>
 <pre><code>// Example of a callback function
 function fetchData(callback) {
   setTimeout(() => {
@@ -67,7 +67,7 @@ fetchData((data) => {
           <i class="fas fa-exchange-alt mr-3"></i> Promise
         </h2>
         <p>A promise is just like a real-life promise. Imagine you promise your friend that you’ll give them a ride. They don’t know for sure if you’ll show up, but they trust you will. In JavaScript, a promise is an object that represents a task that will either be completed (fulfilled) or fail (rejected).</p>
-        <p>With promises, we avoid making code messy and hard to read (callback hell). We can tell JavaScript: "Hey, when this thing is done, do something with the result."</p>
+        <p class="mb-6">With promises, we avoid making code messy and hard to read (callback hell). We can tell JavaScript: "Hey, when this thing is done, do something with the result."</p>
 <pre><code>// Example of a Promise
 let promise = new Promise((resolve, reject) => {
   let success = true;
@@ -87,7 +87,7 @@ promise.then((message) => {
         <h2 class="text-4xl font-bold text-teal-900 flex items-center mb-8">
           <i class="fas fa-clock mr-3"></i> Async/Await
         </h2>
-        <p>Think of async/await like a way to make your code easier to read when working with promises. With async, you say, "This function will take some time, so let's wait for it." The await keyword tells JavaScript to pause execution until the task is finished, making the code look like it runs in order, even though it's still asynchronous.</p>
+        <p class="mb-6">Think of async/await like a way to make your code easier to read when working with promises. With async, you say, "This function will take some time, so let's wait for it." The await keyword tells JavaScript to pause execution until the task is finished, making the code look like it runs in order, even though it's still asynchronous.</p>
 <pre><code>// Example of Async/Await
 async function fetchData() {
   try {
@@ -109,7 +109,7 @@ fetchData();</code></pre>
           <i class="fas fa-history mr-3"></i> Event Loop
         </h2>
         <p>The event loop is like a manager that watches the tasks you give to JavaScript. It looks at two main things: the call stack (where tasks are lined up) and the task queue (where async tasks wait when they’re ready to run). The event loop decides when each task gets to run, ensuring nothing gets left behind.</p>
-        <p>Think of it as the organizer of a concert: the call stack is the main stage where things happen, and the task queue is the list of performers waiting their turn to be called.</p>
+        <p class="mb-6">Think of it as the organizer of a concert: the call stack is the main stage where things happen, and the task queue is the list of performers waiting their turn to be called.</p>
 <pre><code>// Example demonstrating Event Loop
 console.log("Start");
 
