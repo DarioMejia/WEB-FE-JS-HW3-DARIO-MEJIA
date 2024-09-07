@@ -17,15 +17,11 @@ The project follows a simple folder structure for clarity:
 ```
 /js-concepts-blog
 |-- index.html
-|-- css/
-|   |-- styles.css
-|-- js/
-|   |-- script.js
+|-- styles.css
 ```
 
 - **`index.html`**: The main HTML page containing explanations and code examples.
-- **`css/styles.css`**: Basic styles for the HTML page.
-- **`js/script.js`**: JavaScript file for any interactivity or dynamic content (optional).
+- **`styles.css`**: Basic styles for the HTML page.
 
 ### Features
 
